@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+<h1>Need help Contact us right here<h1>
+</head>
+
+<body>
+<script>
+(function(){
+         var w=window;
+         function l(){
+             var d=document;
+             var aws=d.createElement('script');
+             aws.type='text/javascript';
+             aws.async=true;
+             aws.src='https://instantsupport.wixanswers.com/apps/widget/v1/instantsupport/42f0460d-236b-447d-a1fa-6656764ff695/en/embed.js';
+
+             aws.onload = aws.onreadystatechange = function() {
+                 var rs = this.readyState;
+                 if (rs && rs != 'complete' && rs != 'loaded') return;
+               //   try {
+
+               //   } catch (e) {}
+             };
+             var s=d.getElementsByTagName('script')[0];
+             s.parentNode.insertBefore(aws,s);
+         }
+         if(w.addEventListener){
+             w.addEventListener('load',l);
+         }else{
+             w.attachEvent('onload',l);
+         }
+        })()
+</script>
+</body>
+</html>
