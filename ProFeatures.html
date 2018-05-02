@@ -2,7 +2,7 @@
 <head>
   <title>Our Pro Websites Login</title>
   <style>
-    @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);
+  @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);
 
 html{
   background-color: #f1f1f1;
@@ -11,17 +11,17 @@ html{
 
 /* BOX LOGIN */
 .box{
-  position: relative;
-  margin: auto;
-  height: 410px;
+	position: relative;
+	margin: auto;
+	height: 410px;
   top: 40px;
-  left: 0;
-  z-index: 200;
-  right: 0;
-  width:400px;
-  color:#666;
-  border-radius: 3px;
-  background: #FFF;
+	left: 0;
+	z-index: 200;
+	right: 0;
+	width:400px;
+	color:#666;
+	border-radius: 3px;
+	background: #FFF;
   margin-bottom: 100px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   overflow: hidden;
@@ -79,52 +79,52 @@ html{
 .box h1{
   margin-left: 20px;
   margin-top: 0;
-  font-size: 24px;
+	font-size: 24px;
   font-weight: 300;
   color: #cfd8dc;
   line-height: 35px;
 }
 
 .box button{
-  background: #FFF;
-  border:0;
-  color: Aqua;
-  padding:10px;
-  font-size: 16px;
+	background: #cfd8dc;
+	border:0;
+	color: #009688;
+	padding:10px;
+	font-size: 16px;
   font-weight: 300;
-  width:330px;
-  margin:20px auto;
-  display:block;
-  cursor:pointer;
+	width:330px;
+	margin:20px auto;
+	display:block;
+	cursor:pointer;
     -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  border-radius: 2px;
+	transition: all 0.4s;
+	border-radius: 2px;
 }
 
 .box button:active{
-  background: #009688;
+	background: #009688;
   color: #263238;
 }
 
 .box button:hover{
-    background: Aqua;
-  color: Blue;
+		background: #009688;
+  color: #FFF;
     -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+	transition: all 0.4s;
 }
 
 .box p{
-  font-size:14px;
-  text-align:center;
+	font-size:14px;
+	text-align:center;
 }
 
-.group         { 
+.group 			  { 
   position:relative; 
   margin-bottom: 35px; 
   margin-left: 40px;
 }
 
-.inputMaterial         {
+.inputMaterial 				{
   font-size:18px;
   padding:10px 10px 10px 5px;
   display:block;
@@ -133,12 +133,12 @@ html{
   border-bottom:1px solid #757575;
 }
 
-.inputMaterial:focus     { outline:none;}
+.inputMaterial:focus 		{ outline:none;}
 
 /* LABEL ======================================= */
 
-label          {
-  color:Blue; 
+label 				 {
+  color:#999; 
   font-size:14px;
   font-weight:normal;
   position:absolute;
@@ -151,15 +151,15 @@ label          {
 }
 
 /* active state */
-.inputMaterial:focus ~ label, .inputMaterial:valid ~ label     {
+.inputMaterial:focus ~ label, .inputMaterial:valid ~ label 		{
   top:-20px;
   font-size:14px;
-  color: Blue;
+  color: #009688;
 }
 
 /* BOTTOM BARS ================================= */
-.bar   { position:relative; display:block; width:315px; }
-.bar:before, .bar:after   {
+.bar 	{ position:relative; display:block; width:315px; }
+.bar:before, .bar:after 	{
   content:'';
   height:2px; 
   width:0;
@@ -192,16 +192,16 @@ label          {
 
 /* ANIMATIONS ================ */
 @-webkit-keyframes inputHighlighter {
-  from { background:#5264AE; }
-  to   { width:0; background:transparent; }
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
 }
 @-moz-keyframes inputHighlighter {
-  from { background:#5264AE; }
-  to   { width:0; background:transparent; }
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
 }
 @keyframes inputHighlighter {
-  from { background:#5264AE; }
-  to   { width:0; background:transparent; }
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
 }
 
 #footer-box{
@@ -223,7 +223,7 @@ label          {
 }
 
 .sign-up:hover{
-   color: green; 
+   color: #b2dfdb; 
 }
 
 
@@ -392,23 +392,6 @@ body{
 @keyframes bounce-out-nds{
     from {opacity: 1; transform: scale(1);}
     to {opacity: 0; transform: scale(0);}
-}
-
-
-.profile-name{
-    line-height: 60px;
-    left: -70px;
-    position: absolute;
-    font-family: 'Roboto';
-    color: #455a64;
-}
-
-.profile-name:hover{
-  text-decoration: underline;
-}
-
-a:link, a:visited{
-  text-decoration: none;
 }
   </style>
 </head><div class="box">
