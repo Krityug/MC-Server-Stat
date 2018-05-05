@@ -42,8 +42,8 @@
 						Facebook
 					</a>
 
-					<a href="#" class="btn-google m-b-20">
-						<img src="images/icons/icon-google.png" alt="GOOGLE">
+					<a href="https://dynamicscraft.com" class="btn-google m-b-20">
+						<img src="images/icons/icon-google.png" alt="GOOGLE name="google-signin-client_id" content="22158744239-4n9knc25tf10f6e4jo0aegqmnhtbhua2.apps.googleusercontent.com">">
 						Google
 					</a>
 					
@@ -110,6 +110,36 @@
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+	 <script>
+    function onSuccess(googleUser) {
+      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+    }
+    function onFailure(error) {
+      console.log(error);
+    }
+    function renderButton() {
+      gapi.signin2.render('my-signin2', {
+        'scope': 'profile email',
+        'width': 240,
+        'height': 50,
+        'longtitle': true,
+        'theme': 'dark',
+        'onsuccess': onSuccess,
+        'onfailure': onFailure
+      });
+    }
+  </script>
+
+  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+    <a href="https://www.google.com" onclick="signOut();">Sign out</a>
+<script>
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
+</script>
 
 </body>
 </html>
