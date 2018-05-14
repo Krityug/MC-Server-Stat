@@ -1,9 +1,45 @@
 <!DOCTYPE html>
 <html>
-<title>Pounds to Kilograms Weight Converter</title>
+<title>Weight Convertors</title>
+  
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <style>
+      
+      h1 {
+        
+        font-family: 'Lato', sans-serif;
+        text-align:center;
+      }
+      
+      p {
+        
+        font-family: 'Lato', sans-serif;
+        font-weight:Bold ;
+        ;
+      }
+    input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+      }
+      
+      input[type=number]:focus {
+        border-color:dodger Blue;
+        box-shadow: 0 0 8px 0 dodgerblue;
+      }
+  
+    
+    </style>
+    
+  </head>
 <body>
 
-<h2>Weight Converter</h2>
+<h1>Weight Converter v2.0 (Pounds into Kilograms)</h1>
 <p>Type a value in the Pounds field to convert the value to Kilograms:</p>
 
 <p>
@@ -20,3 +56,76 @@ function weightConverter(valNum) {
 
 </body>
 </html>
+
+
+<!DOCTYPE html>
+<html>
+<title>Fahrenheit to Celcius Temperature Converter</title>
+
+<head>
+
+<style>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <style>
+      
+      h1 {
+        
+        font-family: 'Lato', sans-serif;
+        text-align:center;
+      }
+      
+      p {
+        
+        font-family: 'Lato', sans-serif;
+        font-weight:Bold ;
+        ;
+      }
+    input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+      }
+      
+      input[type=number]:focus {
+        border-color:dodger Blue;
+        box-shadow: 0 0 8px 0 dodgerblue;
+      }
+  
+    
+    </style>
+    
+  </head>
+
+
+<body>
+
+<h1>Temperature Converter v2.0 (Fahrenheit into Celcius)</h1>
+
+<p>Type a value in the Fahrenheit field to convert the value to Celcius:</p>
+
+<p>
+  <label>Fahrenheit</label>
+  <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Celcius: <span id="outputCelcius"></span></p>
+
+<script>
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
