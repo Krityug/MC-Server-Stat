@@ -34,6 +34,31 @@
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
+	(function(){
+         var w=window;
+         function l(){
+             var d=document;
+             var aws=d.createElement('script');
+             aws.type='text/javascript';
+             aws.async=true;
+             aws.src='https://instantsupport.wixanswers.com/apps/widget/v1/instantsupport/42f0460d-236b-447d-a1fa-6656764ff695/en/embed.js';
+
+             aws.onload = aws.onreadystatechange = function() {
+                 var rs = this.readyState;
+                 if (rs && rs != 'complete' && rs != 'loaded') return;
+               //   try {
+
+               //   } catch (e) {}
+             };
+             var s=d.getElementsByTagName('script')[0];
+             s.parentNode.insertBefore(aws,s);
+         }
+         if(w.addEventListener){
+             w.addEventListener('load',l);
+         }else{
+             w.attachEvent('onload',l);
+         }
+        })()
 </head>
 
 <body>
