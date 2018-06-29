@@ -6,7 +6,34 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<script>
+	(function(){
+         var w=window;
+         function l(){
+             var d=document;
+             var aws=d.createElement('script');
+             aws.type='text/javascript';
+             aws.async=true;
+             aws.src='https://instantsupport.wixanswers.com/apps/widget/v1/instantsupport/42f0460d-236b-447d-a1fa-6656764ff695/en/embed.js';
 
+             aws.onload = aws.onreadystatechange = function() {
+                 var rs = this.readyState;
+                 if (rs && rs != 'complete' && rs != 'loaded') return;
+               //   try {
+
+               //   } catch (e) {}
+             };
+             var s=d.getElementsByTagName('script')[0];
+             s.parentNode.insertBefore(aws,s);
+         }
+         if(w.addEventListener){
+             w.addEventListener('load',l);
+         }else{
+             w.attachEvent('onload',l);
+         }
+        })()
+	
+	</script>
 	<title>DynamicsCraft</title>
 
 	<!-- Google font -->
